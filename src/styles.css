@@ -1,0 +1,83 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+#content{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(3, 16, 29);
+    height: 100vh;
+}
+
+#header{
+    display: grid;
+    grid-template-columns: 100px 1fr 300px;
+}
+
+#logo{
+    margin: 10px 0 0 10px;
+    grid-column: 1/2;
+
+    display:grid;
+    grid-template-columns: 1fr 150px;
+}
+
+#menu{
+    grid-column: 3/4;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.home{
+    grid-column: 1/2;
+}
+
+.menu{
+    grid-column: 2/3;
+}
+
+.contact{
+    grid-column: 3/4;
+}
+
+p{
+    color: white;
+}
+
+.logoImage{
+    grid-column: 1/2;
+
+    height: 100px;
+    width: 100px;
+    border: 1px solid white;
+}
+
+.title{
+    grid-column: 2/3;
+    padding: 0 0 0 25px;
+
+    display: flex;
+    align-items: flex-end;
+}
+
+#pizzaPNG{
+    height: 50px;
+}
+
+#menu{
+    display:grid;
+    grid-template-columns: repeat(1fr, 5);
+}
+
+.home, .menu, .contact{
+    display: flex;
+    align-items: flex-end;
+}
+
+.text{
+    color: red;
+}
+
+
