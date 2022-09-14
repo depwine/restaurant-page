@@ -84,6 +84,16 @@ p{
     justify-content: center;
 }
 
+.bodyDivMap{
+    height: 79vh;
+
+    display: grid;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
 .logoImage{
     grid-column: 1/2;
 

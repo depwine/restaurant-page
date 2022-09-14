@@ -1,7 +1,9 @@
 import "./styles.css";
-import "./pageSwitch";
+import  { add, conLog, homeSwitch, menuSwitch, contactSwitch } from "./pageSwitch.js";
 
 //page body:
+
+
 const body = document.getElementById("content");
 
 const bodyDiv = document.createElement("div");
@@ -10,15 +12,13 @@ bodyDiv.classList.add("bodyDiv");
 const bodyCopy = document.createElement("p");
 bodyCopy.classList.add("bodyText");
 
-const text = document.createTextNode("This-a pizza place, it's-a so good. She make-a-da cheese a-melt in-a your mouth-a.");
+const text = document.createTextNode("Please select an option from the navigation menu.");
 
 bodyCopy.appendChild(text);
 bodyDiv.appendChild(bodyCopy);
 body.appendChild(bodyDiv);
 
-PageSwitch.conLog();
 
-//////
 /*
 function homeSwitch(){
     console.log("homeswitch");
@@ -87,8 +87,8 @@ function contactSwitch(){
     bodyDiv.appendChild(bodyCopy);
     body.appendChild(bodyDiv);
 }
-///////
 */
+
 
 //event listeners for menu
 const homeButton = document.getElementsByClassName("homeButton");
@@ -102,6 +102,5 @@ menuButton[0].addEventListener(`click`, function(){
 const contactButton = document.getElementsByClassName("contactButton");
 contactButton[0].addEventListener(`click`, function(){
     contactSwitch()});
-
 
 
