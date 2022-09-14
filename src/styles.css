@@ -53,6 +53,12 @@ body{
     justify-content: end;
 }
 
+button{
+    border: none;
+    background-color: rgb(3, 16, 29);
+    color: white;
+}
+
 .home{
     grid-column: 1/2;
 }
