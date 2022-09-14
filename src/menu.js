@@ -8,9 +8,8 @@ bodyDiv.classList.add("bodyDiv");
 const bodyCopy = document.createElement("p");
 bodyCopy.classList.add("bodyText");
 
-const text = document.createTextNode("This-a pizza place, it's-a so good. She make-a-da cheese a-melt in-a your mouth-a.");
+const text = document.createTextNode("This is-a da pizza menu");
 
 bodyCopy.appendChild(text);
 bodyDiv.appendChild(bodyCopy);
 body.appendChild(bodyDiv);
-

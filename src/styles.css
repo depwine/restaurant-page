@@ -1,36 +1,56 @@
 body{
     margin: 0;
     padding: 0;
+    height: 100vh;
+
+    display: grid;
+    grid-template-rows: 130px 1fr 50px;
 }
 
 #content{
     margin: 0;
     padding: 0;
-    height: 100vh;
 }
 
 #header{
     display: grid;
+
     grid-template-columns: 1fr 300px;
+    grid-template-rows: 128px;
+
+    background-color: rgb(3, 16, 29);
+    border: 1px solid rgb(3, 0, 44);
+
+    align-items: center;
+}
+
+#footer{
+    display: grid;
+    justify-content: center;
+    color: black;
     background-color: rgb(3, 16, 29);
     border: 1px solid rgb(3, 0, 44);
 }
 
 #logo{
-    margin: 10px 0 10px 10px;
+    margin: 0px 0 0px 10px;
     grid-column: 1/2;
 
     display:grid;
-    grid-template-columns: 110px 150px;
+    grid-template-columns: 110px 1fr;
+    grid-template-rows: 115px;
+
+    align-items: center;
 }
 
 #menu{
-    grid-column: 3/4;
+    grid-column: 2/3;
     
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-
     padding: 0 10px 0 0;
+
+    display: grid;
+    grid-template-columns: 75px 75px 100px;
+    justify-content: end;
 }
 
 .home{
@@ -49,6 +69,15 @@ p{
     color: white;
 }
 
+.bodyText{
+    color: black;
+}
+
+.bodyDiv{
+    display:grid;
+    justify-content: center;
+}
+
 .logoImage{
     grid-column: 1/2;
 
@@ -61,6 +90,9 @@ p{
     grid-column: 2/3;
     padding: 0 0 0 0;
 
+    font-size: 50px;
+    font-weight: bold;
+
     display: flex;
     align-items: flex-end;
 }
@@ -69,14 +101,17 @@ p{
     height: 50px;
 }
 
-#menu{
-    display:grid;
-    grid-template-columns: repeat(1fr, 5);
-}
-
 .home, .menu, .contact{
+    padding: 0 5px 0 0;
+
     display: flex;
     align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.home:hover, .menu:hover, .contact:hover{
+    font-weight: 900;
+    cursor: pointer;
 }
 
 .text{
@@ -85,9 +120,12 @@ p{
 
 #body{
     color: rgb(212, 212, 212);
+    display: flex;
+    justify-content: center;
 }
 
 .bodyCopy{
-    padding: 0 0 0 10px;
+    padding: 10px 0 0 10px;
+    color: black;
 }
 
